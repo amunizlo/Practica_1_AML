@@ -1,6 +1,5 @@
 #include <Arduino.h>
 #define led 2
-// int led = LED_BUILTIN;
 
 void setup() {
   Serial.begin(115200);
