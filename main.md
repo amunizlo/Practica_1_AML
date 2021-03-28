@@ -11,17 +11,17 @@ Definimos el led que se encenderá
 
 Inicializamos el led como salida
 >void setup() {
-    Serial.begin(115200);
-    pinMode(led, OUTPUT);
+    <p>Serial.begin(115200);</p>
+    <p>pinMode(led, OUTPUT);</p>
 }
 
 Creamos un bucle que encenderá y apagará el led cada 1000ms y a su vez nos irá informando de cuándo enciende y cuándo apaga dicho led
 
 >void loop() {
-  Serial.println("on");
-  digitalWrite(led, HIGH);
-  delay(500);
-  Serial.println("off");
-  digitalWrite(led, LOW);
-  delay(500);
+  <p>Serial.println("on");</p>
+  <p>digitalWrite(led, HIGH);</p>
+  <p>delay(500);</p>
+  <p>Serial.println("off");</p>
+  <p>digitalWrite(led, LOW);</p>
+  <p>delay(500);</p>
 }
