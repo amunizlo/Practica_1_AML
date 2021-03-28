@@ -1,4 +1,4 @@
-#Práctica 1 BLINK
+# Práctica 1 BLINK
 <h6 style="color:rgb(93, 173, 226);">
 Andrea Muñiz </h6>
 <p></p>
