@@ -8,9 +8,9 @@ void setup() {
 
 void loop() {
   Serial.println("on");
-  digitalWrite(led, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(500);                // wait for a second
+  digitalWrite(led, HIGH);
+  delay(500);
   Serial.println("off");
-  digitalWrite(led, LOW);    // turn the LED off by making the voltage LOW
-  delay(500);                // wait for a second
+  digitalWrite(led, LOW);
+  delay(500);
 }
