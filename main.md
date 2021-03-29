@@ -1,20 +1,53 @@
 # Práctica 1 BLINK
-<h6 style="color:rgb(93, 173, 226);">
-Andrea Muñiz </h6>
+###### Andrea Muñiz
 <p></p>
 
-Declaramos las cabeceras a utilizar
-> #include <Arduino.h>
+## Programa + explicación
 
-Definimos el led que se encenderá
-> #define led 2
+> Declaramos las cabeceras a utilizar
 
-Inicializamos el led como salida
->void setup() {
-    <p>Serial.begin(115200);</p>
-    <p>pinMode(led, OUTPUT);</p>
+```
+#include <Arduino.h>
+```
+
+> Definimos el led que se encenderá
+
+```
+#define led 2
+```
+
+> Inicializamos el led como salida
+
+```
+void setup() {
+  Serial.begin(115200);
+  pinMode(led, OUTPUT);
 }
+```
 
-Creamos un bucle que encenderá y apagará el led cada 1000ms y a su vez nos irá informando de cuándo enciende y cuándo apaga dicho led
->void loop() {<p>Serial.println("on");</p><p>digitalWrite(led, HIGH);</p><p>delay(500);</p><p>Serial.println("off");</p><p>digitalWrite(led, LOW);</p><p>delay(500);</p><p>}</p>
+> Creamos un bucle que encenderá y apagará el led cada 1000ms y a su vez nos irá informando de cuándo enciende y cuándo apaga dicho led
+
+```
+void loop() {
+  Serial.println("on");
+  digitalWrite(led, HIGH);
+  delay(500);
+  Serial.println("off");
+  digitalWrite(led, LOW);
+  delay(500);
+}
+```
+***
+
+## Diagrama de Flujo
+
+```mermaid
+graph TD;
+    A(Cargamos el programa) --> B{led encendido};
+    B -->|si| C[Escribe ON];
+    B -->|no| D[Escribe OFF];
+```
+***
+
+## Diagrama de tiempo
 
