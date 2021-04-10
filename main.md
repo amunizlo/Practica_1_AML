@@ -25,7 +25,7 @@ void setup() {
 }
 ```
 
-> Creamos un bucle que encenderá y apagará el led cada 1000ms y a su vez nos irá informando de cuándo enciende y cuándo apaga dicho led
+> Creamos un bucle que encenderá y apagará el led cada 500ms y a su vez nos irá informando de cuándo enciende y cuándo apaga dicho led
 
 ```
 void loop() {
@@ -40,14 +40,27 @@ void loop() {
 ***
 
 ## Diagrama de Flujo
+> Código para la realización del diagrama de flujo (mediante Mermaid).
 
-```mermaid
+```
 graph TD;
     A(Cargamos el programa) --> B{led encendido};
     B -->|si| C[Escribe ON];
     B -->|no| D[Escribe OFF];
 ```
+![Diagrama de flujo](diagrama_flujo.png)
+
 ***
 
 ## Diagrama de tiempo
 
+> Código para la realizzación del diagrama de secuencia (mediante Mermaid).
+
+```
+sequenceDiagram
+  participant led apagado
+	participant led encendido
+	led apagado ->> led encendido: 500 milisegundos
+	led encendido -->> led apagado: 500 milisegundos
+  ```
+  ![Diagrama de secuencia](diagrama_secuencia.png)
