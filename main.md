@@ -48,11 +48,11 @@ graph TD;
     B -->|si| C[Escribe ON];
     B -->|no| D[Escribe OFF];
 ```
-![Diagrama de flujo](diagrama_flujo.png)
+![Diagrama de flujo](diagrama_flujo1.png)
 
 ***
 
-## Diagrama de tiempo
+## Diagrama de secuencia
 
 > Código para la realizzación del diagrama de secuencia (mediante Mermaid).
 
@@ -63,7 +63,7 @@ sequenceDiagram
 	led apagado ->> led encendido: 500 milisegundos
 	led encendido -->> led apagado: 500 milisegundos
 ```
-![Diagrama de secuencia](diagrama_secuencia.png)
+![Diagrama de secuencia](diagrama_secuencia1.png)
 
 > __Pregunta:__ ¿Cuál es el tiempo libre que tiene el procesador?<p></p>
 El procesador solo tiene el tiempo libre mientras que el led está apagado (500ms) o lo que es lo mismo, el procesador solo trabaja cuando tiene que encender el led y mandar un mensaje al usuario de __ON__ u __OFF__
