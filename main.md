@@ -65,5 +65,5 @@ sequenceDiagram
 ```
 ![Diagrama de secuencia](diagrama_secuencia.png)
 
-> __Pregunta:__ ¿Cuál es el tiempo libre que tiene el procesador?
+> __Pregunta:__ ¿Cuál es el tiempo libre que tiene el procesador?<p></p>
 El procesador solo tiene el tiempo libre mientras que el led está apagado (500ms) o lo que es lo mismo, el procesador solo trabaja cuando tiene que encender el led y mandar un mensaje al usuario de __ON__ u __OFF__
